@@ -22,7 +22,7 @@ Date of finished: 23.03.2023 <br/>
    ### Часть 1:
    1) Построена топология сети.
    
-![image](https://user-images.githubusercontent.com/17079352/226307322-708245cf-b53b-427c-99f0-a1f4c339dbc6.png)
+      ![image](https://user-images.githubusercontent.com/17079352/226307322-708245cf-b53b-427c-99f0-a1f4c339dbc6.png)
 
    2) Теперь поработаем в конфиге роутера.
       * В конфигурационном режиме изменено название маршрутизатора на CMERouter.<br/>
