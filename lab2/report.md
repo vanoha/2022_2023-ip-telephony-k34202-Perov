@@ -69,6 +69,7 @@ Date of finished: 23.03.2023 <br/>
    3) Результат проверки работы:
 
       <img src="https://user-images.githubusercontent.com/58363643/226121168-eead5dc4-1a2b-4818-8ab7-a731ca25aad1.png" width="400">
+      
       ![image](https://user-images.githubusercontent.com/17079352/227189346-38c94e3b-a2e0-49c6-b9f1-c651ab945fbf.png)
 
 ## Выводы:
