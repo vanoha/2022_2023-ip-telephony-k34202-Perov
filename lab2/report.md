@@ -6,7 +6,7 @@ Group: K34202 <br/>
 Author: Perov Ivan <br/>
 Lab: Lab2 <br/>
 Date of create: 20.03.2023 <br/>
-Date of finished: 20.03.2023 <br/>
+Date of finished: 23.03.2023 <br/>
 
 # Лабораторная работа №2 "Конфигурация voip в среде Сisco packet tracer"
 
@@ -19,7 +19,7 @@ Date of finished: 20.03.2023 <br/>
 ## Ход работы:
    В процессе выполнения лабораторной работы были выпонены следующие шаги:
    
-   #### Часть 1:
+   ### Часть 1:
    1) Построена топология сети.
    
 ![image](https://user-images.githubusercontent.com/17079352/226307322-708245cf-b53b-427c-99f0-a1f4c339dbc6.png)
@@ -48,37 +48,28 @@ Date of finished: 20.03.2023 <br/>
 
         ![image](https://user-images.githubusercontent.com/17079352/226330642-06b592c8-cb21-403a-9baa-ffc68e885ee9.png)
 
+   ### Часть 2:
+   1) Продолжим настройку коммутатора:
+      * Созданы VLAN порты на коммутаторе и настроено подключение IP телефонов.
 
-Созданы VLAN порты на коммутаторе для взаимодействия коммутатора с маршрутизатором и подключены IP телефоны.
+        ![image](https://user-images.githubusercontent.com/17079352/227185664-de6f967c-f2b8-42c0-899e-3e21af04dead.png)
 
-<img src="https://user-images.githubusercontent.com/58363643/226112168-19b2d981-4f2b-4a2a-8872-066dd844beb0.png" width="500">
+      * Задан маршрут по умолчанию командой, а также настроен порт (тип trunk).
 
-![image](https://user-images.githubusercontent.com/58363643/226112832-49a38080-74d2-4382-9445-3e813b6b65f8.png)
+        ![image](https://user-images.githubusercontent.com/58363643/226112598-75ce35b5-f08c-4c6b-8f40-a748ca83aabf.png)
 
-Задан маршрут по умолчанию командой 
+   2) Вернемся к роутеру:
+      * Финальная стадия: настроен DHCP сервер, подключен и настроен Call Manager Express, а также настроены IP телефоны.
 
-    ip default-gateway.
-    
-Настроен порт как канал типа trunk.
+        ![image](https://user-images.githubusercontent.com/58363643/226112906-b977ef34-fcde-4bee-998c-33581fd1fada.png)
+        ![image](https://user-images.githubusercontent.com/58363643/226112948-3a83d206-fb2b-4e05-a39b-703e1d18853e.png)
 
-![image](https://user-images.githubusercontent.com/58363643/226112598-75ce35b5-f08c-4c6b-8f40-a748ca83aabf.png)
-![image](https://user-images.githubusercontent.com/58363643/226112675-8ec3e3ec-cfd8-4964-8c74-7450456f4d0f.png)
+        ![image](https://user-images.githubusercontent.com/17079352/227186705-f940f108-6db8-46ec-b957-a771e4eafd53.png)
 
-Настроен DHCP сервер для передачи голоса и данных на маршрутизаторе Cisco 2811.
-Настроены услуги телефонии Cisco CallManager Express на маршрутизаторе.
-Настроены IP-телефоны и соединены с коммутатором.
-Подключены конечные узлы устройств.
+   3) Результат проверки работы:
 
-![image](https://user-images.githubusercontent.com/58363643/226112906-b977ef34-fcde-4bee-998c-33581fd1fada.png)
-![image](https://user-images.githubusercontent.com/58363643/226112948-3a83d206-fb2b-4e05-a39b-703e1d18853e.png)
-
-<img src="https://user-images.githubusercontent.com/58363643/226121120-9b091b54-1d92-44fc-bc56-c0fe8089467e.png" width="400">
-
-Проверить звонки между телефонами
-
-<img src="https://user-images.githubusercontent.com/58363643/226121168-eead5dc4-1a2b-4818-8ab7-a731ca25aad1.png" width="400">
-
-![image](https://user-images.githubusercontent.com/58363643/226122219-9d833d2e-6389-4a9a-9af6-c28df6e6cecf.png)
+      <img src="https://user-images.githubusercontent.com/58363643/226121168-eead5dc4-1a2b-4818-8ab7-a731ca25aad1.png" width="400">
+      ![image](https://user-images.githubusercontent.com/17079352/227189346-38c94e3b-a2e0-49c6-b9f1-c651ab945fbf.png)
 
 ## Выводы:
 Таким образом, была изучена схема настройки IP-телефонии с помощью CallManager Express.
